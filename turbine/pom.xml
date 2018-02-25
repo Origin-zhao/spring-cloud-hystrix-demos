@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.joyuan</groupId>
-	<artifactId>server-consumer</artifactId>
+	<artifactId>turbine</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>server-consumer</name>
-	<description>Demo project for Spring Boot</description>
+	<name>turbine</name>
+	<description>turbine</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,27 +28,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<artifactId>spring-cloud-starter-netflix-turbine</artifactId>
 		</dependency>
-		<!--feign 默认依赖 Hystrix  -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>
-		<!--监控后台-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-		</dependency>
-		<!--监控信息-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<!--需要依赖HystrixCommandAspect类-->
-		<dependency>
-			<groupId>com.netflix.hystrix</groupId>
-			<artifactId>hystrix-javanica</artifactId>
 		</dependency>
 	</dependencies>
 

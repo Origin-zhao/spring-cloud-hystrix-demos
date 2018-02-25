@@ -12,11 +12,10 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableFeignClients
-@EnableHystrixDashboard
 @EnableHystrix
-public class ServerConsumerApplication {
+public class ServerConsumerBApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServerConsumerApplication.class, args);
+		SpringApplication.run(ServerConsumerBApplication.class, args);
 	}
 }
