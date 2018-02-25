@@ -1,6 +1,6 @@
 package com.joyuan.web;
 
-import com.joyuan.service.HelloService;
+import com.joyuan.service.IHelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @Autowired
-    HelloService service;
+    IHelloService service;
 
     @RequestMapping("/say1")
     public String say1(){
